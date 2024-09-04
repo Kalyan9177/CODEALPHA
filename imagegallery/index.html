@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullimgbox">
+        <img src="https://static.toiimg.com/thumb/msid-111741230,width-1280,height-720,resizemode-4/111741230.jpg" id="fullimg">
+        <span onclick="closefullimg()">x</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="https://images.meesho.com/images/products/265814181/1ctml_512.webp" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwWnOmv6F43UgGkbZSO7FAncFAxXhJLUjfw&s" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.png" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyErzntbSU_dzZltUAWoEdTQWjOcY_ax1IEQ&s" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/380200/380232.jpg" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://m.media-amazon.com/images/I/61QBoBsma7L._AC_UF1000,1000_QL80_.jpg" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202311/kl-rahul-123711834-3x4.jpg?VersionId=8oPRMmZS3sb.S0ybGYUJeSDcU18nEF1A" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+        <img src="https://im.rediff.com/cricket/2023/aug/08tilak.jpg?w=670&h=900" style="width: 100%; max-width: 350px; height: auto;" onclick="openfullimg(this.src)">
+    </div>
+
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox")
+        var fullimg = document.getElementById("fullimg")
+        function openfullimg(pic){
+            fullimgbox.style.display = "flex";
+            fullimg.src=pic;
+        }
+        function closefullimg(){
+            fullimgbox.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
